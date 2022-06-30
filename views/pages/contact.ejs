@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h3>Contact Form</h3>
+      <form action="contact_process" method="post">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <%= name %>
+                    <input type="text" name="name" id="" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Contact</label>
+                    <input type="text" name="name" id="" required class="form-control">
+                </div>
+                <input type="submit" name="submit" id="" class="form-control btn btn-primary">
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Message</label>
+                    <input type="text" name="message" id="" required class="form-control">
+                </div>
+              </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Look I'm A Sidebar!</h3>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
